@@ -1,0 +1,63 @@
+@import "../variables.less";
+@import "./toolbar.variables.less";
+
+toolbar {
+    &:extend(.toolbar);
+}
+
+.toolbar {
+    position: relative;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0 @toolbar--padding;
+    height: @toolbar--height;
+    min-height: @toolbar--height;
+
+    font-size: @toolbar--font-size;
+    
+    white-space: nowrap;
+    z-index: @z-index-3;
+
+    &__row {
+        display: inherit;
+        flex-direction: inherit;
+        align-items: inherit;
+
+        width: 100%;
+        height: @toolbar--height;
+        min-height: @toolbar--height;
+    }
+
+    span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &,
+    &__row {
+        & > button {
+            &:last-child {
+                margin-right: -12px;
+            }
+
+            &:first-child {
+                margin-left: -12px;
+            }
+        }
+    }
+
+    &--fixed {
+        z-index: @z-index-3 + 1;
+    }
+
+    &--initial-spacing {
+        & > button {
+            &:first-child {
+                margin-right: @toolbar--initial-spacing;
+            }
+        }
+    }
+}

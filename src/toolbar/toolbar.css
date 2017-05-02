@@ -1,0 +1,39 @@
+.toolbar,
+toolbar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 16px;
+  height: 56px;
+  min-height: 56px;
+  font-size: 20px;
+  white-space: nowrap;
+  z-index: 300;
+}
+.toolbar__row {
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+  width: 100%;
+  height: 56px;
+  min-height: 56px;
+}
+.toolbar span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.toolbar > button:last-child,
+.toolbar__row > button:last-child {
+  margin-right: -12px;
+}
+.toolbar > button:first-child,
+.toolbar__row > button:first-child {
+  margin-left: -12px;
+}
+.toolbar--fixed {
+  z-index: 301;
+}
+.toolbar--initial-spacing > button:first-child {
+  margin-right: 19px;
+}
