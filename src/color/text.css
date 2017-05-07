@@ -1,0 +1,44 @@
+.md-default-background {
+  background-color: #eee !important;
+}
+.md-text-white {
+  color: #fff;
+}
+.md-text-white-secondary {
+  color: rgba(255, 255, 255, 0.67) !important;
+}
+.md-text-black {
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+.md-text-black-secondary {
+  color: rgba(0, 0, 0, 0.54) !important;
+}
+.md-icon {
+  -webkit-transition: color 0.25s;
+  -moz-transition: color 0.25s;
+  -ms-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+.md-icon--active {
+  color: rgba(0, 0, 0, 0.54);
+}
+.md-icon--inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+.md-icon--no-animation {
+  -webkit-transition: none;
+  -moz-transition: none ;
+  -ms-transition: none ;
+  -o-transition: none ;
+  transition: none ;
+}
+.md-icon--small {
+  font-size: 18px;
+}
+.md-icon--white.md-icon--active {
+  color: #fff;
+}
+.md-icon--white.md-icon--inactive {
+  color: rgba(255, 255, 255, 0.3);
+}

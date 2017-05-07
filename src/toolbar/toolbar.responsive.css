@@ -5,3 +5,8 @@
     min-height: 64px;
   }
 }
+@media only screen and (min-width: 993px) {
+  .toolbar--initial-spacing > button:first-child {
+    margin-right: 19px;
+  }
+}

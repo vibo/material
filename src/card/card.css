@@ -1,0 +1,10 @@
+.card {
+  display: block;
+  width: 100%;
+  border-radius: 2px 2px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.card--spaced {
+  padding: 0 16px;
+}

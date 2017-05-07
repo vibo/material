@@ -1,0 +1,5 @@
+@media only screen and (min-width: 993px) {
+  .card--spaced {
+    padding: 0 24px;
+  }
+}

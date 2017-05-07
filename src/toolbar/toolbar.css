@@ -7,9 +7,17 @@ toolbar {
   padding: 0 16px;
   height: 56px;
   min-height: 56px;
-  font-size: 20px;
+  font-size: 18px;
   white-space: nowrap;
   z-index: 300;
+}
+.toolbar > button.button-icon:last-child,
+.toolbar__row > button.button-icon:last-child {
+  margin-right: -12px;
+}
+.toolbar > button.button-icon:first-child,
+.toolbar__row > button.button-icon:first-child {
+  margin-left: -12px;
 }
 .toolbar__row {
   display: inherit;
@@ -23,17 +31,15 @@ toolbar {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.toolbar > button:last-child,
-.toolbar__row > button:last-child {
-  margin-right: -12px;
-}
-.toolbar > button:first-child,
-.toolbar__row > button:first-child {
-  margin-left: -12px;
-}
 .toolbar--fixed {
   z-index: 301;
 }
+.toolbar--flex {
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
 .toolbar--initial-spacing > button:first-child {
-  margin-right: 19px;
+  margin-right: 4px;
 }

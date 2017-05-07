@@ -21,6 +21,19 @@ toolbar {
     white-space: nowrap;
     z-index: @z-index-3;
 
+    &,
+    &__row {
+        & > button.button-icon {
+            &:last-child {
+                margin-right: -12px;
+            }
+
+            &:first-child {
+                margin-left: -12px;
+            }
+        }
+    }
+
     &__row {
         display: inherit;
         flex-direction: inherit;
@@ -36,21 +49,15 @@ toolbar {
         text-overflow: ellipsis;
     }
 
-    &,
-    &__row {
-        & > button {
-            &:last-child {
-                margin-right: -12px;
-            }
-
-            &:first-child {
-                margin-left: -12px;
-            }
-        }
-    }
-
     &--fixed {
         z-index: @z-index-3 + 1;
+    }
+
+    &--flex {
+        -moz-box-flex: 1;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
     }
 
     &--initial-spacing {

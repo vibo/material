@@ -1,0 +1,11 @@
+@import "../variables.less";
+@import "../mixins.less";
+@import "./card.variables.less";
+
+.card {
+    &--spaced {
+        .breakpoint('min-md', {
+            padding: 0 @card--gutter-lg;
+        });
+    }
+}
