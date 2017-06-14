@@ -1,22 +1,32 @@
 @import "../variables.less";
 @import "../mixins.less";
 
+@import '../depth/depth.less';
+
 .shadow-depth-0 {
     .box-shadow('none !important');
 }
 
 .shadow-depth-1 {
+    &:extend(.depth-100);
     .box-shadow(@shadow-depth--1);
 }
 
 .shadow-depth-2 {
+    &:extend(.depth-200);
     .box-shadow(@shadow-depth--2);
 }
 
 .shadow-depth-3 {
+    &:extend(.depth-300);
     .box-shadow(@shadow-depth--3);
 }
 
 .shadow-depth-4 {
+    &:extend(.depth-400);
     .box-shadow(@shadow-depth--4);
+}
+
+.no-shadow {
+    .box-shadow(none);
 }

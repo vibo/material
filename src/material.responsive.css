@@ -1,0 +1,17 @@
+@media only screen and (min-width: 993px) {
+  .card--spaced {
+    padding: 0 24px;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .toolbar {
+    padding: 0 24px;
+    height: 64px;
+    min-height: 64px;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .toolbar--initial-spacing > button:first-child {
+    margin-right: 19px;
+  }
+}

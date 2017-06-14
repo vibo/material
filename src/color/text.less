@@ -1,34 +1,35 @@
 @text--black-primary: rgba(0,0,0,0.87);
 @text--black-secondary: rgba(0,0,0,0.65);
-@text--white-secondary: rbga(255,255,255,0.75);
+@text--white-secondary: rgba(255,255,255,0.67);
+
 
 // Color definitions.
 .md-default-background {
     background-color: #eee !important;
 }
 
+.md-text-white-secondary {
+    color: @text--white-secondary;
+}
+
 .md-text-white {
     color: #fff;
     
     .md-text-secondary {
-        &:extend(.text--white-secondary);
+        color: @text--white-secondary;
     }
 }
 
-.md-text-white-secondary {
-    color: rgba(255,255,255,0.67) !important;
+.md-text-black-secondary {
+    color: rgba(0,0,0,0.54) !important;
 }
 
 .md-text-black {
     color: @text--black-primary !important;
 
     .md-text-secondary {
-        &:extend(.text--black-secondary);
+        color: @text--black-secondary;
     }
-}
-
-.md-text-black-secondary {
-    color: rgba(0,0,0,0.54) !important;
 }
 
 .md-icon {
