@@ -1,3 +1,9 @@
+.clickable,
+.button,
+.button-icon {
+  cursor: pointer;
+  cursor: hand;
+}
 .fixed {
   position: fixed;
 }
@@ -1192,8 +1198,29 @@
 .depth-440 {
   z-index: 440;
 }
-.depth-450 {
+.depth-450,
+.backdrop {
   z-index: 450;
+}
+.depth-500,
+.modal {
+  z-index: 500;
+}
+.depth-510,
+.modal__window {
+  z-index: 510;
+}
+.depth-520 {
+  z-index: 520;
+}
+.depth-530 {
+  z-index: 530;
+}
+.depth-540 {
+  z-index: 540;
+}
+.depth-550 {
+  z-index: 550;
 }
 .flex {
   flex: 1;
@@ -1238,6 +1265,14 @@
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+.backdrop {
+  background-color: rgba(33, 35, 37, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .button {
   border-radius: 2px 2px;
@@ -1391,6 +1426,78 @@
 }
 .card--spaced {
   padding: 0 16px;
+}
+.modal {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.modal__action {
+  margin-right: 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.modal__action-bar {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+  min-height: 52px;
+}
+padding .modal__action-bar--justify-left {
+  justify-content: flex-start;
+}
+.modal__content {
+  padding: 24px;
+}
+.modal__content__section {
+  padding-bottom: 20px;
+}
+.modal__window {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+  max-height: 100%;
+  width: 700px;
+  overflow-y: auto;
+}
+.modal__window--shadowed {
+  -webkit-box-shadow: 0 2.5px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0 2.5px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.33);
+  box-shadow: 0 2.5px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.33);
+}
+.scrollbar::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd;
 }
 .side-navigation {
   display: block;
