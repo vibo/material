@@ -9,12 +9,13 @@
     border: none;
     outline: none;
 
-    box-sizing: border-box;
     padding: 12px;
     width: @button-icon--dimension;
     height: @button-icon--dimension;
 
-    background: transparent;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: inherit;
 
     &:before {
         content: "";
@@ -63,7 +64,7 @@
         height: (36px * 2px);
         padding: 0;
 
-        .md-icon {
+        .icon {
             font-size: 36px;
         }
     }
@@ -75,7 +76,7 @@
         height: 74px;
         padding: 0;
 
-        .md-icon {
+        .icon {
             font-size: 48px;
         }
     } 
@@ -85,7 +86,7 @@
         height: (18px * 2px);
         padding: 0;
         
-        .md-icon {
+        .icon {
             font-size: 18px;
         }
     }

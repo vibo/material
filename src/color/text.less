@@ -2,72 +2,20 @@
 @text--black-secondary: rgba(0,0,0,0.65);
 @text--white-secondary: rgba(255,255,255,0.67);
 
+.text {
+    &--black {
+        color: @text--black-primary !important;
 
-// Color definitions.
-.md-default-background {
-    background-color: #eee !important;
-}
-
-.md-text-white-secondary {
-    color: @text--white-secondary;
-}
-
-.md-text-white {
-    color: #fff;
-    
-    .md-text-secondary {
-        color: @text--white-secondary;
+        &--secondary {
+            color: @text--black-secondary;
+        }
     }
-}
 
-.md-text-black-secondary {
-    color: rgba(0,0,0,0.54) !important;
-}
-
-.md-text-black {
-    color: @text--black-primary !important;
-
-    .md-text-secondary {
-        color: @text--black-secondary;
-    }
-}
-
-.md-icon {
-    -webkit-transition: color 0.25s;
-    -moz-transition: color 0.25s;
-    -ms-transition: color 0.25s;
-    -o-transition: color 0.25s;
-    transition: color 0.25s;
-    
-    &--active {
-        color: rgba(0,0,0,0.54);
-    }
-    
-    &--inactive {
-        color: rgba(0,0,0,0.26);
-    }
-    
-    &--no-animation {
-        -webkit-transition: none;
-        -moz-transition: none ;
-        -ms-transition: none ;
-        -o-transition: none ;
-        transition: none ;
-    }
-    
-    &--small {
-        font-size: 18px;
-    }
-    
     &--white {
-        &.md-icon {
-            &--active {
-                color: #fff;
-            }
-            
-            &--inactive {
-                color: rgba(255,255,255,0.3);
-            }
+        color: #fff;
+
+        &-secondary {
+            color: @text--white-secondary;
         }
     }
 }
