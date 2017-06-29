@@ -1,0 +1,44 @@
+
+
+.list {
+    display: block;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    box-sizing: border-box;
+
+    &__item {
+        display: flex;
+
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+
+        padding: 16px;
+        height: 72px;
+
+        box-sizing: border-box;
+
+        &--divided {
+            box-shadow: inset 0 -1px 0 rgba(0,0,0,0.06);
+        }
+
+        &--inactive {
+            background-color: #f4f5f7;
+        }
+
+        &--not-divided {
+            box-shadow: none;
+        }
+
+        &--three-lines {
+            height: 88px;
+        }
+    }
+}
