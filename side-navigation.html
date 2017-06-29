@@ -1,21 +1,26 @@
 <html>
 <head>
     <link rel="stylesheet" href="src/material.css">
+    <link rel="stylesheet" href="src/material.responsive.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body style="margin: 0; padding: 0; background: #eee;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
-
     <div class="flex-surface">
-        <div class="side-navigation side-navigation--static side-navigation--visible md-white">
+        <div class="side-navigation side-navigation--static side-navigation--visible depth-400 shadow-4 md-grey-200">
             <h2>Side navigation</h2>
         </div>
 
         <div class="flex">
-            <div class="toolbar shadow-depth-3 md-indigo-500 md-text-white">
-                Toolbar
+            <div class="toolbar toolbar--initial-spacing shadow-3 md-indigo-500 text--white">
+                <button class="button-icon">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <span>Toolbar</span>
             </div>
 
             <div style="padding: 24px; box-sizing: border-box">
-                <div class="card">
+                <div class="card card--spaced md-white">
                     <p>
                         Text inside a card element
                     </p>

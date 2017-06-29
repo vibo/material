@@ -1136,7 +1136,7 @@
   color: rgba(255, 255, 255, 0.67);
 }
 .depth-100,
-.shadow-depth-1 {
+.shadow-1 {
   z-index: 100;
 }
 .depth-110 {
@@ -1155,7 +1155,7 @@
   z-index: 150;
 }
 .depth-200,
-.shadow-depth-2 {
+.shadow-2 {
   z-index: 200;
 }
 .depth-210 {
@@ -1174,7 +1174,7 @@
   z-index: 250;
 }
 .depth-300,
-.shadow-depth-3 {
+.shadow-3 {
   z-index: 300;
 }
 .depth-310 {
@@ -1193,7 +1193,7 @@
   z-index: 350;
 }
 .depth-400,
-.shadow-depth-4 {
+.shadow-4 {
   z-index: 400;
 }
 .depth-410 {
@@ -1253,35 +1253,31 @@
 .scrollbar::-webkit-scrollbar-thumb {
   background-color: #bdbdbd;
 }
-.shadow-depth-0 {
-  -webkit-box-shadow: 'none !important';
-  -moz-box-shadow: 'none !important';
-  box-shadow: 'none !important';
-}
-.shadow-depth-1 {
+.shadow-1 {
   -webkit-box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
-.shadow-depth-2 {
+.shadow-2 {
   -webkit-box-shadow: 0 1px 3.5px 0 rgba(0, 0, 0, 0.1), 0 3px 7px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 3.5px 0 rgba(0, 0, 0, 0.1), 0 3px 7px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 3.5px 0 rgba(0, 0, 0, 0.1), 0 3px 7px 0 rgba(0, 0, 0, 0.2);
 }
-.shadow-depth-3 {
+.shadow-3 {
   -webkit-box-shadow: 0 2px 4.5px 0 rgba(0, 0, 0, 0.14), 0 4px 12px 0 rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 2px 4.5px 0 rgba(0, 0, 0, 0.14), 0 4px 12px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 2px 4.5px 0 rgba(0, 0, 0, 0.14), 0 4px 12px 0 rgba(0, 0, 0, 0.25);
 }
-.shadow-depth-4 {
+.shadow-4 {
   -webkit-box-shadow: 0 2.5px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0 2.5px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.33);
   box-shadow: 0 2.5px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.33);
 }
-.no-shadow {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+.no-shadow,
+.shadow-none .shadow-0 {
+  -webkit-box-shadow: 'none !important';
+  -moz-box-shadow: 'none !important';
+  box-shadow: 'none !important';
 }
 .backdrop {
   background-color: rgba(33, 35, 37, 0.5);
@@ -1598,7 +1594,7 @@ toolbar {
   text-overflow: ellipsis;
 }
 .toolbar--fixed {
-  z-index: 301;
+  z-index: 310;
 }
 .toolbar--initial-spacing > button:first-child {
   margin-right: 4px;
